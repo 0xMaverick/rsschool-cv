@@ -4,6 +4,7 @@
 * **Location:** Minsk, Belarus
 * **Phone number:** + 375 29 3890699
 * **E-mail:** 3890699@gmail.com
+* **Github:** [0xMaverick](https://github.com/0xMaverick)
 ***
 ## About me
 I am 33 years old and I am fond of programming and development. Despite the fact that I studied at a specialized university I began to work in a completely different field. Now I'm interested in development again and I want to grow in this direction. I consider diligence and perseverance to be my strengths. In addition I alwats strive to acquire new knowledge and skills.
