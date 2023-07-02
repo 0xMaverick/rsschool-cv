@@ -70,4 +70,5 @@ https://github.com/0xMaverick/rsschool-cv
 * studied Java at https://javarush.com
 ***
 ## English level
-B2 (according to https://examinator.epam.com/Main/PersonalAssignments)
+B2 (according to [EPAM English test](https://examinator.epam.com/Main/PersonalAssignments))
+
