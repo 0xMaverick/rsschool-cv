@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello, world!
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ilya Nos CV</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./assets/img/favicon.ico">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                      <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                      <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
+                      <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                      <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                      <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                      <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                      <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container left-side">
+                <figure class="figure-left-side">
+                    <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar" width="380" height="506">
+                </figure>
+                <section class="section" id="profile">
+                    <h1 class="section-title">Ilya<br>Front-End Developer</h1>
+                </section>
+                <section class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="section-list">
+                        <li class="section-list-item">Location: Minsk, Belarus</li>
+                        <li class="section-list-item">E-mail: <a href="mailto:3890699@gmail.com">3890699@gmail.com</a></li>
+                        <li class="section-list-item">Discord: maverick368</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="container right-side">
+                <section class="section" id="summary">
+                    <h2 class="section-title">About me</h2>
+                    <p class="section-paragraph">
+                        I am 33 years old and I am fond of programming and development.
+                        Despite the fact that I studied at a specialized university I began to work in a completely
+                        different field. Now I am interested in development again and I want to grow in this direction.
+                        I consider diligence and perseverance to be my strengths. In addition I always strive to acquire new knowledge and skills.
+                    </p>
+                </section>
+                <section class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="section-list">
+                        <li class="section-list-item">HTML/CSS</li>
+                        <li class="section-list-item">Java core</li>
+                        <li class="section-list-item">SQL</li>
+                        <li class="section-list-item">JavaScript basics</li>
+                    </ul>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="section-title">Code example</h2>
+                        <details>
+                            <summary>From JavaRush course</summary>
+                            Write a program that enters a string of text from the keyboard. The program should display two lines:<br>
+                            <ul>
+                                <li>The first line contains only vowels from the input line.</li>
+                                <li>The second - only consonants and punctuation marks from the entered string.</li>
+                            </ul>
+                            Connect the letters with a space, each line must end with a space.
+                            <pre>
+                                <code>
+                                    public class Solution {
+                                        public static char[] vowels = new char[]{'а', 'я', 'у', 'ю', 'и', 'ы', 'э', 'е', 'о', 'ё'};
+
+                                        public static void main(String[] args) throws Exception {
+                                            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+                                            char[] charArray = reader.readLine().toCharArray();
+                                            List&lt;Character&gt; vowelsList = new ArrayList&lt;Characte&gt;();
+                                            List&lt;Character&gt; consonantsList = new ArrayList&lt;Character&gt;();
+                                            for (char ch : charArray) {
+                                                if (ch != ' ') {
+                                                    if (isVowel(ch)) {
+                                                        vowelsList.add(ch);
+                                                    } else {
+                                                        consonantsList.add(ch);
+                                                    }
+                                                }
+                                            }
+                                            for (char ch : vowelsList) {
+                                                System.out.print(ch + " ");
+                                            }
+                                            System.out.println("");
+                                            for (char ch : consonantsList) {
+                                                System.out.print(ch + " ");
+                                            }
+                                        }
+
+                                        // метод проверяет, гласная ли буква
+                                        public static boolean isVowel(char character) {
+                                            character = Character.toLowerCase(character);  // приводим символ в нижний регистр - от заглавных к строчным буквам
+                                            for (char vowel : vowels) {  // ищем среди массива гласных
+                                                if (character == vowel) {
+                                                    return true;
+                                                }
+                                            }
+                                            return false;
+                                        }
+                                    }
+                                </code>
+                            </pre>
+                        </details>
+                </section>
+                <section class="section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-paragraph">
+                        <a href="https://github.com/0xMaverick/rsschool-cv" class="section-link" target="_blank">Project "My CV"</a>
+                    </p>
+                </section>
+                <section class="section" id="education">
+                    <h2 class="section-title">Education</h2>
+                        <ul class="section-list">
+                            <li class="section-list-item">Belarusian State University of Informatics and Radioelectronics - information systems and technologies (economics)</li>
+                            <li class="section-list-item">Studied Java at <a href="https://javarush.com" class="section-link" target="_blank">JavaRush</a></li>
+                        </ul>
+                </section>
+                <section class="section" id="english">
+                    <h2 class="section-title">English</h2>
+                    <p class="section-paragraph">
+                        B2 (according to <a href="https://examinator.epam.com/Main/PersonalAssignments" class="section-link" target="_blank">EPAM English test</a>)
+                    </p>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="https://github.com/0xMaverick" target="_blank"><img src="./assets/svg/github-mark.svg" width="50" height="50" alt="My Github"></a></li>
+                    <li class="footer-list-item">2023</li>
+                    <li class="footer-list-item"><a href="https://rs.school/js/" target="_blank"><img src="./assets/svg/rs_school_js.svg" width="90" height="36" alt="RS School"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
